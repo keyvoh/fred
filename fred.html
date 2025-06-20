@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Demons Racing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="c:\Users\DIDIZ TECH CO. LTD\Desktop\images (11).jpeg" type="image/x-icon">
+    <style>
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: #d40000;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin-left: 1.5rem;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover, nav ul li a.active {
+        background-color: #a30000;
+    }
+    
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    
+    /* Home Page Styles */
+    .hero {
+        text-align: center;
+        padding: 3rem 0;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/race1.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #raceBtn {
+        background-color: #d40000;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #raceBtn:hover {
+        background-color: #a30000;
+    }
+    
+    .profile {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 2rem;
+        border: 5px solid #d40000;
+    }
+    
+    .bio h2 {
+        color: #d40000;
+        margin-bottom: 1rem;
+    }
+    
+    .gallery {
+        margin: 2rem 0;
+    }
+    
+    .gallery h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #d40000;
+    }
+    
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+    
+    .image-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+    
+    .image-grid img:hover {
+        transform: scale(1.03);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+       
+        nav ul {
+            margin-top: 1rem;
+            justify-content: center;
+        }
+       
+        .profile {
+            flex-direction: column;
+            text-align: center;
+        }
+       
+        .profile-img {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+       
+        .stats {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">Speed Demons</div>
+    <nav>
+        <ul>
+            <li><a href="fred.html" class="active">Home</a></li>
+            <li><a href="about.html">About html</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Welcome to Speed Demons Racing</h1>
+        <button id="raceBtn">Start Engine</button>
+    </section>
+
+    <section class="profile">
+        <img src="c:\Users\DIDIZ TECH CO. LTD\Desktop\images (8).jpeg" alt="Racer Profile" class="profile-img">
+        <div class="bio">
+            <h2>FREDRICK FLORENCE</h2>
+            <p>Professional racer with 10+ years of experience. </p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Race Highlights</h2>
+        <div class="image-grid">
+            <img src="c:\Users\DIDIZ TECH CO. LTD\Desktop\images (7).jpeg" alt="Race action 1">
+            <img src="c:\Users\DIDIZ TECH CO. LTD\Desktop\images (9).jpeg" alt="Race action 2">
+            <img src="c:\Users\DIDIZ TECH CO. LTD\Desktop\images (10).jpeg" alt="Race action 3">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Speed Demons Racing. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js">document.addEventListener('DOMContentLoaded', function() {
+    const raceBtn = document.getElementById('raceBtn');
+   
+    if (raceBtn) {
+        raceBtn.addEventListener('click', function() {
+            alert('Vroom vroom! Engine started! Ready to race?');
+        });
+    }
+   
+    // Contact form submission
+    const contactForm = document.getElementById('contactForm');
+   
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+           
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+           
+            // Simple validation
+            if (name && email && message) {
+                alert(`Thanks for your message, ${name}! We'll get back to you soon.`);
+                contactForm.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    }
+})</script>
+</body>
+</html>
